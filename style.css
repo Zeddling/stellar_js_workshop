@@ -1,17 +1,18 @@
 /* Base reset */
-/** {
+* {
   margin: 0;
   padding: 0;
 }
-#transactions {
-    background-color: burlywood;
+#transactions ul {
     
+    border: none;
 
 }    
 
 #fetchButton {
     width: 30%;
     font-size: 1rem;
+    text-align: center;
     background-color: burlywood;
     padding: 2 2 2 2;
     border-radius: 0.1rem;
