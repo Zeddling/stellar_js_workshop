@@ -5,3 +5,17 @@ li {
 .card {
     margin: 2rem;
 }
+
+.margin-bottom-reduce-sm {
+    margin-bottom: -2rem;
+}
+
+.margin-top-sm {
+    margin-top: 5rem;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+
