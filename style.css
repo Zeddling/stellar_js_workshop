@@ -9,6 +9,10 @@
 
 }    
 
+.col {
+  position: relative;
+}
+  
 #fetchButton {
     width: 30%;
     font-size: 1rem;
@@ -37,6 +41,7 @@ body {
     background-color: #eaeaea;
 }
 #title {
+    position: relative;
     color: #87ADDE;
     text-align: center;
     font-size: 1.2rem;
