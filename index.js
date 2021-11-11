@@ -17,6 +17,7 @@ $(document).ready(() => {
 
                 var i = 1;  //  rows iterator
                 var j = 0;  //  array iterator
+
                 page.records.forEach(record => {
                     var row = document.createElement("tr");
 
@@ -39,11 +40,6 @@ $(document).ready(() => {
 
                     var buttonTD = document.createElement("td");
                     var button = document.createElement("button");
-
-                    var hidden = document.createElement("input");
-                    hidden.setAttribute("type", "hidden");
-                    hidden.setAttribute("value", j);
-                    button.appendChild(hidden);
 
                     button.innerText = "Read";
                     button.classList.add("btn", "btn-success");
@@ -68,6 +64,8 @@ $(document).ready(() => {
             });
     });
 
+    //  Created list elements from json object
+    //  and appends it in the ul tag
     function showInfo(btn) {
         var data = data_array[btn.target.id];
         var ul = document.getElementById("transaction-info");
@@ -78,6 +76,7 @@ $(document).ready(() => {
             "memo", "memo_bytes", "memo_type"
         ];
 
+        //  discard all keys that we have no use for at the moment
         not_needed.forEach(key => {
             delete data[key];
         });
@@ -91,7 +90,7 @@ $(document).ready(() => {
                 );
 
                 if (typeof data[key] != "string" || data[key].length > 70) {
-                    li.classList.add("overflow-scroll")
+                    li.classList.add("text-overflow")
                 }
                 
                 var divParent = document.createElement("div");

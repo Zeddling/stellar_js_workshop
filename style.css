@@ -60,18 +60,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.margin-top-sm {
-    margin-bottom: 2rem;
-}
-
-
-.overflow-scroll {
-    overflow: scroll;
-}
-
 #rowBtn {
     position: relative;
-    top: 2rem;
+    top: 1rem;
+}
+
+
+.text-overflow {
+    word-wrap: break-word;
+    overflow: scroll;
 }
 
 li::-webkit-scrollbar {
