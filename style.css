@@ -87,3 +87,17 @@ li::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(156, 156, 154);  /* creates padding around scroll thumb */
 }
+
+.margin-bottom-reduce-sm {
+    margin-bottom: -2rem;
+}
+
+.margin-top-sm {
+    margin-top: 5rem;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+
