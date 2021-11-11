@@ -12,7 +12,7 @@
 #fetchButton {
     width: 30%;
     font-size: 1rem;
-    position: absolute;
+    position: relative;
     left: 35%;
     background-color: burlywood;
     padding: 2 2 2 2;
